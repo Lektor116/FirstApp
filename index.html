@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>FirstApp</title>
+		<script src="js/jquery-1.10.2.min.js"></script>
+	</head>
+	<body>
+		<center>
+			<h1>Welcome</h1>
+			<hr />
+			<button id="first">Нажми на меня!</button>
+			<div id="result"></div>
+			<script>
+				$(document).ready(function() {
+					$("#first").click(function() {
+						if(confirm("Вы действительно хотите нажать на кнопку? Не стоит"))
+						{
+							alert("ПОШЕЛ НА... УЧЕБУ !111");
+							$("#result").html("Вы все таки нажали");
+							$("#first").attr("disabled","disable");
+						}
+						else
+						{
+							alert("Хорошо что не нажали...");
+							$("#result").html("<font color='green'>Вы молодец!</font>");
+							//$("#first").attr("disabled","disable");
+						}
+					});
+				});
+			</script>
+		</center>
+	</body>
+</html>
