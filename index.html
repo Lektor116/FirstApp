@@ -10,9 +10,15 @@
 			<h1>Welcome</h1>
 			<hr />
 			<button id="first">Нажми на меня!</button>
+			<br />
+			<button id="clear">Отменить все</button>
 			<div id="result"></div>
 			<script>
 				$(document).ready(function() {
+					$("#clear").click(function() {
+						$("#first").removeAttr("disabled");
+						$("#result").empty();
+					});
 					$("#first").click(function() {
 						if(confirm("Вы действительно хотите нажать на кнопку? Не стоит"))
 						{
