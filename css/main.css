@@ -1,0 +1,25 @@
+h1 {
+	font-weight: bold;
+}
+.container, h1 {
+	font-family: 'SEGOEUIL';
+}
+.starter-template {
+	text-align: center;
+	/*padding-top: 55px;*/
+}
+@font-face {
+	font-family: 'SEGOEUIL';
+	src: url('../fonts/SEGOEUIL.eot');
+	src: local('SEGOEUIL'), url('../fonts/SEGOEUIL.woff') format('woff'), url('../fonts/SEGOEUIL.ttf') format('truetype');
+}
+.logo {
+	text-align: center;
+	color: #999;
+	padding-top: 6px;
+	font-size: 25px;
+}
+.logo:hover {
+	color: white;
+	cursor: pointer;
+}

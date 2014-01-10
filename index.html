@@ -3,38 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>FirstApp</title>
-		<script src="js/jquery-1.10.2.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		
+		<script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/auth.js"></script>
 	</head>
 	<body>
-		<center>
-			<h1>Welcome</h1>
-			<hr />
-			<button id="first">Нажми на меня!</button>
-			<br />
-			<button id="clear">Отменить все</button>
-			<div id="result"></div>
-			<script>
-				$(document).ready(function() {
-					$("#clear").click(function() {
-						$("#first").removeAttr("disabled");
-						$("#result").empty();
-					});
-					$("#first").click(function() {
-						if(confirm("Вы действительно хотите нажать на кнопку? Не стоит"))
-						{
-							alert("ПОШЕЛ НА... УЧЕБУ !111");
-							$("#result").html("Вы все таки нажали");
-							$("#first").attr("disabled","disable");
-						}
-						else
-						{
-							alert("Хорошо что не нажали...");
-							$("#result").html("<font color='green'>Вы молодец!</font>");
-							//$("#first").attr("disabled","disable");
-						}
-					});
-				});
-			</script>
-		</center>
+		<!-- MENU -->
+		<nav class="navbar navbar-inverse" role="navigation">
+		  <div class="logo">FirstApp</div>
+		</nav>
+		<!-- / MENU -->
+		<div class="container">
+		  <div class="starter-template">
+			<h1>Добро пожаловать!</h1>
+			<p class="lead">Выберите действие:</p>
+			<a href="#" class="btn btn-success btn-lg btn-block"><i class="glyphicon glyphicon-check"></i> Войти</a>
+			<h3>или</h3>
+			<a href="#" class="btn btn-primary btn-lg btn-block"><i class="glyphicon glyphicon-plus-sign"></i> Создать аккаунт</a>
+		  </div>
+		</div>
 	</body>
 </html>

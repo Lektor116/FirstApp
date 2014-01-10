@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>FirstApp - авторизация</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		
+		<script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/auth.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="starter-template">
+				<h1>Авторизуйтесь</h1>
+				<div id="result"></div>
+				<form role="auth" id="auth">
+					<div class="form-group">
+						<label for="email">Логин:</label>
+						<input type="text" class="form-control" id="login" placeholder="post@example.com" />
+						<label for="password">Пароль:</label>
+						<input type="password" class="form-control" id="password" placeholder="***" />
+						<br />
+						<button type="button" id="enter" class="btn btn-success btn-lg btn-block"><i class="glyphicon glyphicon-check"></i> Войти</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
