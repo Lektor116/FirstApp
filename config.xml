@@ -1,0 +1,13 @@
+ <widget id="com.example.firstapp" version="0.0.1">
+        <name>FirstApp</name>
+        <description>
+            Тестовое приложение.
+        </description>
+        <author email="iskander@washme.su" href="http://iskander.me">
+            Iskander Khairullin
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+        <preference name="Fullscreen" value="true" />
+        <preference name="WebViewBounce" value="true" />
+    </widget>

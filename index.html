@@ -10,7 +10,17 @@
 		
 		<script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/auth.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			document.addEventListener("deviceready", onDeviceReady, false);
+			function onDeviceReady()
+			{
+				show_alert("Приложение загружено","Успех");
+			}
+		</script>
 	</head>
 	<body>
 		<!-- MENU -->
