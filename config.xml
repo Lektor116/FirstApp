@@ -1,7 +1,7 @@
  <widget id="com.example.firstapp" version="0.0.1">
-        <name>FirstApp</name>
+        <name>Traffic Control</name>
         <description>
-            Тестовое приложение.
+            Удаленное управление светофором
         </description>
         <author email="iskander@washme.su" href="http://iskander.me">
             Iskander Khairullin
