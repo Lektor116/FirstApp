@@ -9,3 +9,9 @@ function show_alert (message, title)
 		alert(title ? (title + ": " + message) : message);
 	}
 }
+
+function about()
+{
+	var text = "Панель управления светофором v 0.1\n\nРазработчик - Искандер Хайруллин";
+	show_alert(text,"О нас");
+}

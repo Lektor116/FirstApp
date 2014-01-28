@@ -10,31 +10,25 @@
 		
 		<script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/auth.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
 		
-		<script type="text/javascript" charset="utf-8">
-			document.addEventListener("deviceready", onDeviceReady, false);
-			function onDeviceReady()
-			{
-				show_alert("Приложение загружено","Успех");
-			}
-		</script>
 	</head>
 	<body>
 		<!-- MENU -->
 		<nav class="navbar navbar-inverse" role="navigation">
-		  <div class="logo">FirstApp</div>
+		  <div class="logo">Оптимизация дорожно-транспортного потока (beta)</div>
 		</nav>
 		<!-- / MENU -->
 		<div class="container">
 		  <div class="starter-template">
-			<h1>Добро пожаловать!</h1>
-			<p class="lead">Выберите действие:</p>
-			<a href="auth.html" class="btn btn-success btn-lg btn-block"><i class="glyphicon glyphicon-check"></i> Войти</a>
-			<h3>или</h3>
-			<a href="#" class="btn btn-primary btn-lg btn-block"><i class="glyphicon glyphicon-plus-sign"></i> Создать аккаунт</a>
+			<h1>Выберите сигнал светофора:</h1>
+			<br />
+			<p><a href="#" class="btn btn-danger dropdown-toggle signal">КРАСНЫЙ</a></p>
+			<p><a href="#" class="btn btn-warning dropdown-toggle signal">ЖЕЛТЫЙ</a></p>
+			<p><a href="#" class="btn btn-success dropdown-toggle signal">ЗЕЛЕНЫЙ</a></p>
+			<br />
+			<p class="lead"><a href="#" onclick="about(); return false">О разработчике</a></p>
 		  </div>
 		</div>
 	</body>

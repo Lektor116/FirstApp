@@ -17,9 +17,17 @@ h1 {
 	text-align: center;
 	color: #999;
 	padding-top: 6px;
-	font-size: 25px;
+	font-size: 30px;
+	color:white;
 }
 .logo:hover {
 	color: white;
 	cursor: pointer;
+}
+.signal {
+	width: 100%;
+	font-size: 22px;
+}
+.lead {
+	font-size: 28px !important;
 }
