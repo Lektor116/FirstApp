@@ -1,22 +1,33 @@
-function show_alert (message, title) 
-{
-	if (navigator.notification) 
-	{
-		navigator.notification.alert(message, null, title, 'OK');
-	} 
-	else 
-	{
-		alert(title ? (title + ": " + message) : message);
-	}
-}
-function vibrate() 
-{
-        navigator.notification.vibrate(2000);
-}
-
-function about()
-{
-	var text = "Панель управления светофором v 0.1\n\nРазработчик - Искандер Хайруллин";
-	show_alert(text,"О нас");
-	vibrate();
-}
+$(document).ready(function() {
+	$("#options").hide();
+	$("#option").click(function() {
+		$("#options").slideToggle();
+	});
+	$(".signal").click(function() {
+		var signal = $(this).attr("id");
+		var ip = $("#ip").val();
+		if(ip == "")
+		{
+			alert("Ошибка: введите адрес сервера");
+			return false;
+		}
+		$.ajax({
+			type: "GET",
+			url: "http://"+ip+"/",
+			data:{c:signal},
+			success:function(msg) {
+				msg = $.trim(msg);
+				msg;
+			},
+			error:function(msg) {
+				msg = $.trim(msg);
+				alert("Не удалось подключиться");
+				return false;
+			}
+		});
+		return false;
+	});
+	$("#about").click(function() {
+		alert("Оптимизация дорожно-транспортного потока v 0.1\n\nРазработчик - Хайруллин Искандер");
+	});
+});
